@@ -118,6 +118,7 @@ function updateInfoPane(d){
   d3.select("#timestamp").text("Time Played: "+d.timestamp_obj.toString());
   d3.select("#platform").text("Platform: "+d.platform);
   d3.select("#danceability_score").text("Danceability: "+d.danceability_score);
+  d3.select("#popularity_normalized").text("Popularity: "+d.popularity_normalized);
   d3.select("#song_tempo").text("Song Tempo: "+d.song_tempo+" BPM");
   d3.select("#energy").text("Energy: "+d.energy);
   d3.select("#familiarity_score").text("Familiarity: "+d.familiarity_score);
