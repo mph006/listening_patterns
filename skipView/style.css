@@ -1,0 +1,68 @@
+  body {
+    font-family: arial, sans;
+    font-size: 13px;
+    margin: 10px, 50px;
+    width:100%;
+  }
+  
+
+  h4{
+    font-weight: normal;
+    margin: 0px;
+    line-height: 1.1em;
+
+  }
+
+  .axis text {
+    font-size: 12px;
+    fill: #777;
+  }
+
+  .axis path {
+    display: none;
+  }
+
+  .axis line {
+    stroke-width:.3px;
+    stroke: #dedede;
+  }
+
+  .legend{
+    position: absolute;
+    top:6%;
+    left: 65%;
+    width:300px;
+    text-align: center;
+  }
+
+  .facet-pick-wrapper{
+    position: absolute;
+    width:200px;
+    left: 33%;
+    padding-top: 10px; 
+  }
+
+
+  .user-pick-wrapper{
+    position: absolute;
+    width: 100px;
+    padding-top: 10px;
+    padding-left: 20px;
+
+  }
+
+  .info-pane{
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    width: 400px;
+    text-align: center;
+    opacity: 0;
+  }
+
+  .info-wrapper{
+    text-align: left;
+  }
+
+
+

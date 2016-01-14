@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Skip Data</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+
+<body>
+
+	<div class = "legend">Select a User And A Facet
+
+		<div class="user-pick-wrapper">User:
+			<select class="user-select" onchange ="updateChart()">
+				<option value="0" selected>User 1</option>
+				<option value="1">User 2</option>
+			</select>
+		</div>
+   
+    	<div class="facet-pick-wrapper">Metric:
+    		<select class="facet-select" onchange ="updateChart()">
+  				<option value="danceability_score" selected>Danceability</option>
+				<option value="energy">Energy</option>
+				<option value="familiarity_score">Familiarity</option>
+				<option value="popularity_normalized">Popularity</option>
+				<option value="runnability">Runnability</option>
+				<option value="song_tempo">Song Tempo</option>
+				<option value="valence_score">Valence</option>
+			</select>
+    	</div>
+	</div>
+
+	<div class="info-pane">
+		<div class="info-wrapper">
+	    	<div id="song_name"></div>
+	    	<div id="song_album"></div>
+	    	<div id="song_artist"></div>
+	    	<div id="timestamp"></div>
+	    	<div id="platform"></div>
+	    	<div id="danceability_score"></div>
+	    	<div id="song_tempo"></div>
+	    	<div id="energy"></div>
+	    	<div id="familiarity_score"></div>
+	    	<div id="runnability"></div>
+	    	<div id="valence_score"></div>
+    	</div>
+    </div>
+
+</body>
+
+<link rel="stylesheet" type="text/css" href="/style.css"/>
+<script src="music_data.js"></script>

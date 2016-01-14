@@ -1,0 +1,185 @@
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #fff;
+  width: 1200px;
+  height: 725px;
+  margin-top: 10px;
+}
+
+.ignoreText{
+  pointer-events:none;
+}
+
+#sidebar {
+  position: absolute;
+  top: 50px;
+  left: 25px;
+  width: 300px;
+  height: 150px;
+  text-align: left;
+  color: #666;
+
+  font-size: 1.3em;
+}
+
+rect.background {
+    fill: white;
+}
+
+
+#sequence {
+  width: 600px;
+  height: 45px;
+}
+
+/*#legend{
+  padding: 10px 0 0 3px;
+}*/
+
+#infobox{
+  position: absolute;
+  top: 60px;
+  left: 1050px;
+  width: 350px;
+  height: 260px;
+  text-align: left;
+  color: #666;
+
+  visibility: hidden;
+/*  background-color: gray;*/
+  font-size: 1.5em;
+}
+
+#sequence text, #legend text, #infobox text{
+  font-weight: 600;
+  fill: #fff;
+  text-align: center;
+  user-select:none;
+  pointer-events:none;
+}
+
+#chart {
+  position: relative;
+}
+
+#chart path {
+  stroke: #fff;
+}
+
+#explanation{
+  position: absolute;
+  top: 320px;
+  left: 580px;
+  width: 140px;
+  text-align: center;
+  color: #666;
+  user-select:none;
+}
+
+#intro {
+  position: absolute;
+  top: 320px;
+  left: 565px;
+  width: 175px;
+  text-align: center;
+  color: #fff;
+  visibility: visible;
+
+}
+
+#instructions{
+  position: absolute;
+  top: 625px;
+  left: 1025px;
+  width: 300px;
+  text-align: center;
+  color: #666;
+  visibility: visible;
+}
+
+#percentage {
+ /* color: #fff;*/
+  font-size: 2.5em;
+  user-select:none;
+}
+#subpercentage{
+/*  color: #fff;*/
+  font-size: 0.9em;
+  user-select:none;
+}
+
+#tableContainer{
+  position: absolute;
+  top: 300px;
+  left: 1160px;
+  width: 430px;
+  height:275px;
+  color: #666;
+  visibility:visible;
+}
+
+#text {
+  font: 11px sans-serif;
+  cursor: pointer;
+  pointer-events:none;
+  font-weight: bold;
+}
+
+th{
+  font-weight: bold;
+  font-size:120%;
+  border:2px solid black;
+  text-align: center;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+
+tx{
+  font-weight: bold;
+  font-size:140%;
+  width: 430;
+  text-align: center;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+/*  padding-bottom: 0.5em;
+  padding-top: 0.5em;*/
+  border:2px solid black;
+}
+td{
+  text-align: center;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  font-size: 100%;
+  border: 2px solid black;
+}
+
+#typeAhead{
+  margin: 15px 0px 20px 0px;
+  padding: 0px 0px;
+}
+
+#typeAhead .tt-dropdown-menu {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#typeAhead .empty-message {
+  padding: 5px 5px;
+ text-align: center;
+}
+
+.pageLinks{
+  position:absolute;
+  bottom: 5em;
+}
+
+a{
+  padding-left: 1em;
+}
